@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --blue: #4886a9;
+    --orange: #f5a623;
+    --gray: #656e73;
+    --dark: #0b1d27;
+    --base-white: #fafafa;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.half-container {
+    max-width: 710px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Background */
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.bg-base-white {
+    background-color: var(--base-white);
+}
+
+/* Font Colors */
+.text-white,
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white li,
+.text-white a {
+    color: var(--white);
+}
+
+.text-black,
+.text-black h1,
+.text-black h2,
+.text-black h3,
+.text-black h4,
+.text-black h5,
+.text-black h6,
+.text-black p,
+.text-black li,
+.text-black a {
+    color: var(--black);
+}
+
+.text-orange,
+.text-orange h1,
+.text-orange h2,
+.text-orange h3,
+.text-orange h4,
+.text-orange h5,
+.text-orange h6,
+.text-orange p,
+.text-orange li,
+.text-orange a {
+    color: var(--orange);
+}
+
+.text-blue,
+.text-blue h1,
+.text-blue h2,
+.text-blue h3,
+.text-blue h4,
+.text-blue h5,
+.text-blue h6,
+.text-blue p,
+.text-blue li,
+.text-blue a {
+    color: var(--blue);
+}
+
+.text-gray,
+.text-gray h1,
+.text-gray h2,
+.text-gray h3,
+.text-gray h4,
+.text-gray h5,
+.text-gray h6,
+.text-gray p,
+.text-gray li,
+.text-gray a {
+    color: var(--gray);
+}
+
+
+.text-dark,
+.text-dark h1,
+.text-dark h2,
+.text-dark h3,
+.text-dark h4,
+.text-dark h5,
+.text-dark h6,
+.text-dark p,
+.text-dark li,
+.text-dark a {
+    color: var(--dark);
+}
+
+.text-base-white,
+.text-base-white h1,
+.text-base-white h2,
+.text-base-white h3,
+.text-base-white h4,
+.text-base-white h5,
+.text-base-white h6,
+.text-base-white p,
+.text-base-white li,
+.text-base-white a {
+    color: var(--base-white);
+}
+
+/* Font Weight */
+.text-normal,
+.text-normal h1,
+.text-normal h2,
+.text-normal h3,
+.text-normal h4,
+.text-normal h5,
+.text-normal h6,
+.text-normal p,
+.text-normal a {
+    font-weight: normal;
+}
+
+.text-semibold,
+.text-semibold h1,
+.text-semibold h2,
+.text-semibold h3,
+.text-semibold h4,
+.text-semibold h5,
+.text-semibold h6 {
+    font-weight: 600;
+}
+
+.text-bold,
+.text-bold h1,
+.text-bold h2,
+.text-bold h3,
+.text-bold h4,
+.text-bold h5,
+.text-bold h6,
+.text-bold p,
+.text-bold a {
+    font-weight: bold;
+}
+
+
+.text-mb-20 p {
+    margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+    margin: 0;
+    font-family: 'Cinzel', sans-serif;
+}
+
+/* Secondary Font */
+.text-work-sans h1,
+.text-work-sans h2,
+.text-work-sans h3,
+.text-work-sans h4,
+.text-work-sans h5,
+.text-work-sans h6,
+.text-work-sans p,
+.text-work-sans a,
+.text-work-sans li {
+    font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+    /* padding-left: 15px; */
+}
+
+p,
+li,
+a {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+nav a.active {
+    font-weight: 600;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.transition {
+    transition: 0.2s;
+}
+
+.zoom-hover:hover {
+    transform: scale(1.01);
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 75px;
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 65px;
+}
+
+h3 {
+    font-size: 48px;
+    line-height: 55px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 50px;
+    color: var(--base-white);
+    font-family: 'Work Sans', sans-serif;
+    transition: 0.2s;
+}
+
+.btn.primary {
+    border: 2px solid var(--orange);
+    background-color: var(--orange);
+}
+
+.btn.primary:hover {
+    background-color: transparent;
+    color: var(--orange);
+}
+
+/* Global */
+.heading-wrapper span {
+    color: var(--orange);
+}
+
+.accent-box {
+    top: 15px;
+    right: -15px;
+}
+
+.br-default {
+    border-radius: 15px;
+}
+
+.bs-default {
+    box-shadow: 0 0 10px 0 #b9b9b9;
+}
+
+.bs-primary {
+    box-shadow: 0 90px 30px -30px #b9b9b9;
+}
+
+.text-link a {
+    color: var(--orange)
+}
+
+.alternate-content .row-item:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+/* Header */
+#site-header.sticky .logo-wrapper img {
+    width: 200px !important;
+}
+
+/* Contact Form */
+.contact-form .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+/* Hero */
+#hero {
+    background-attachment: fixed;
+}
+
+/* Listing */
+.listing-item {
+    transition: 0.2s;
+}
+
+.listing-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 0 #b9b9b9;
+}
+
+.listing-item .btn-wrapper {
+    margin-top: auto;
+}
+
+/* Listing Form */
+.property-search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    justify-content: end;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--dark);
+    font-family: 'Work Sans', sans-serif;
+}
+
+select,
+input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.full-width {
+    grid-column: span 3;
+    text-align: right;
+}
+
+/* Services */
+.service-item.box .icon-wrapper {
+    width: 30px;
+    height: 30px;
+}
+
+#services {
+    background-attachment: fixed;
+}
