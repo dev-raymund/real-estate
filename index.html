@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" media="all">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" media="all">
+    <script type="text/javascript" src="slick/slick.js"></script>
+
+</head>
+
+<body>
+    <header id="site-header" class="top-0 bg-white z-3 bs-default">
+        <div class="container">
+            <div class="header-wrapper flex jc-space-between pt-10 pb-10">
+                <div class="logo-wrapper">
+                    <a href="/">
+                        <img src="images/logo.webp" alt="Logo" class="transition" style="width: 300px;" />
+                    </a>
+                </div>
+                <nav class="flex ai-center">
+                    <ul class="list-style-none flex gap-50 jc-space-between text-work-sans text-blue uppercase">
+                        <li>
+                            <a href="#hero" class="active">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#listings">
+                                Listings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="pt-100 pb-100 bg-cover bg-no-repeat bg-center relative"
+            style="background-image: url(images/hero-bg.jpg);">
+            <div class="accent-bg absolute w-100 h-100 bg-blue z-1 top-0 opacity-90"></div>
+            <div class="container">
+                <div class="content-wrapper flex gap-50 relative z-2">
+                    <div class="col-1 w-50 flex col jc-center">
+                        <div class="heading-wrapper text-white text-work-sans text-normal uppercase">
+                            <h4>Marci Metzger - <span>The Ridge Realty Group</span></h4>
+                        </div>
+                        <div class="heading-wrapper text-white text-normal">
+                            <h1>Pahrump Realto</h1>
+                        </div>
+                        <div class="description-wrapper text-work-sans text-white mt-20">
+                            <p>Where Dreams Come True: Transforming Visions into <br>Vibrant Living Spaces.</p>
+                        </div>
+                        <div class="btn-wrapper mt-30">
+                            <a href="#" class="btn primary">
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2 w-50 flex col jc-center">
+                        <div class="featured-img-wrapper relative">
+                            <img src="images/couple-happy-bg.jpg" alt="Featured Image"
+                                class="w-100 relative z-2 br-default zoom-hover transition" />
+                            <div class="accent-box absolute w-100 h-100 bg-orange z-1 br-default"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="pt-100 pb-100">
+            <div class="container">
+                <div class="content-wrapper box bs-default bg-base-white p-30 flex gap-30 br-default">
+                    <div class="col-1 w-25">
+                        <div class="featured-img-wrapper">
+                            <img src="images/Marci.webp" alt="Featured Image" class="br-default w-100" />
+                        </div>
+                    </div>
+                    <div class="col-2 w-75">
+                        <div class="heading-wrapper text-orange text-work-sans uppercase text-normal">
+                            <h4>About</h4>
+                        </div>
+                        <div class="heading-wrapper text-dark uppercase text-normal">
+                            <h3>Marci Metzger</h3>
+                        </div>
+                        <div class="description-wrapper text-work-sans uppercase mb-30">
+                            <p><b>Realtor for nearly 3 Decades!</b></p>
+                            <p><b>206-919-6886</b></p>
+                        </div>
+
+                        <div class="description-wrapper text-work-sans">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.</p>
+                        </div>
+
+                        <div class="btn-wrapper mt-30">
+                            <a href="#" class="btn primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="listings" class="pt-100 pb-100 bg-base-white">
+            <div class="container">
+                <div class="heading-wrapper text-orange text-work-sans uppercase text-normal text-center mb-10">
+                    <h4>Listings</h4>
+                </div>
+                <div class="heading-wrapper text-dark text-center text-normal mb-30">
+                    <h4>Find Your Dream Home</h4>
+                </div>
+
+                <div class="form-wrapper w-70 m-0-auto">
+                    <form class="property-search-form">
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select id="location" name="location">
+                                <option value="">Any</option>
+                                <!-- Add more locations -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="type">Type</label>
+                            <select id="type" name="type">
+                                <option value="">Any</option>
+                                <!-- Add more types -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sort">Sort By</label>
+                            <select id="sort" name="sort">
+                                <option value="">--</option>
+                                <!-- Add sort options -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select id="bedrooms" name="bedrooms">
+                                <option value="">Any Number</option>
+                                <!-- Add more options -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="baths">Baths</label>
+                            <select id="baths" name="baths">
+                                <option value="">Any Number</option>
+                                <!-- Add more options -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="min-price">Min Price</label>
+                            <input type="text" id="min-price" name="min-price" placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="max-price">Max Price</label>
+                            <input type="text" id="max-price" name="max-price" placeholder="">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn primary">Search Now</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="listings-wrapper flex wrap gap-10 jc-space-between mt-50">
+                    <div class="listing-item br-default p-20 bg-base-white w-30 flex col">
+                        <div class="featured-img-wrapper mb-20">
+                            <img src="images/house-1.jpg" alt="House" class="w-100 br-default" />
+                        </div>
+                        <div class="heading-wrapper text-work-sans mb-20 text-blue">
+                            <h5>House 1</h5>
+                        </div>
+                        <div class="description-wrapper text-work-sans mb-30">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.</p>
+                        </div>
+
+                        <div class="btn-wrapper mb-20">
+                            <a href="#" class="btn primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="listing-item br-default p-20 bg-base-white w-30 flex col">
+                        <div class="featured-img-wrapper mb-20">
+                            <img src="images/house-2.jpg" alt="House" class="w-100 br-default" />
+                        </div>
+                        <div class="heading-wrapper text-work-sans mb-20 text-blue">
+                            <h5>House 2</h5>
+                        </div>
+                        <div class="description-wrapper text-work-sans mb-30">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                        </div>
+
+                        <div class="btn-wrapper mb-20">
+                            <a href="#" class="btn primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="listing-item br-default p-20 bg-base-white w-30 flex col">
+                        <div class="featured-img-wrapper mb-20">
+                            <img src="images/house-3.jpg" alt="House" class="w-100 br-default" />
+                        </div>
+                        <div class="heading-wrapper text-work-sans mb-20 text-blue">
+                            <h5>House 3</h5>
+                        </div>
+                        <div class="description-wrapper text-work-sans mb-30">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.</p>
+                        </div>
+
+                        <div class="btn-wrapper mb-20">
+                            <a href="#" class="btn primary">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="pt-100 pb-100">
+            <div class="container">
+                <div class="heading-wrapper text-orange text-work-sans uppercase text-normal text-center mb-30">
+                    <h4>Trusted Partners</h4>
+                </div>
+
+                <div class="partners-list-wrapper flex jc-space-evenly gap-20">
+                    <div class="featured-img-wrapper">
+                        <img src="images/partner-1.png" alt="Logo" class="zoom-hover transition" />
+                    </div>
+                    <div class="featured-img-wrapper">
+                        <img src="images/partner-2.png" alt="Logo" class="zoom-hover transition" />
+                    </div>
+                    <div class="featured-img-wrapper">
+                        <img src="images/partner-3.jpg" alt="Logo" class="zoom-hover transition" />
+                    </div>
+                    <div class="featured-img-wrapper">
+                        <img src="images/partner-4.jpg" alt="Logo" class="zoom-hover transition" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sold" class="pt-100 pb-100 bg-base-white">
+            <div class="container">
+                <div class="heading-wrapper text-orange text-work-sans uppercase text-normal text-center mb-30">
+                    <h4>Get It Sold</h4>
+                </div>
+                <div class="alternate-content flex col gap-50">
+                    <div class="row-item flex gap-50">
+                        <div class="col-1 w-50">
+                            <div class="featured-img-wrapper relative bs-primary">
+                                <img src="images/alternate-img-1.webp" alt="Featured Image"
+                                    class="w-100 zoom-hover transition relative z-2 br-default" />
+                                <div class="accent-box absolute w-100 h-100 bg-orange z-1 br-default"></div>
+                            </div>
+                        </div>
+                        <div class="col-2 w-50 flex col jc-center">
+                            <div class="heading-wrapper text-blue mb-20">
+                                <h4>Top Residential Sales Last 5 Years</h4>
+                            </div>
+                            <div class="description-wrapper text-dark text-work-sans text-mb-20">
+                                <p>We helped nearly 90 clients in 2021, and closed 28.5 million in sales!</p>
+                                <p>Our team works hard everyday to grow and learn, so that we may continue to excel in
+                                    our market. Our clients deserve our best, & we want to make sure our best is better
+                                    every year.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-item flex gap-50">
+                        <div class="col-1 w-50">
+                            <div class="featured-img-wrapper relative bs-primary">
+                                <img src="images/alternate-img-2.webp" alt="Featured Image"
+                                    class="w-100 zoom-hover transition relative z-2 br-default" />
+                                <div class="accent-box absolute w-100 h-100 bg-orange z-1 br-default"></div>
+                            </div>
+                        </div>
+                        <div class="col-2 w-50 flex col jc-center">
+                            <div class="heading-wrapper text-blue mb-20">
+                                <h4>Don't Just List it...</h4>
+                            </div>
+                            <div class="description-wrapper text-dark text-work-sans text-mb-20">
+                                <p>Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of
+                                    every possible buyer, getting you top dollar for your home.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row-item flex gap-50">
+                        <div class="col-1 w-50">
+                            <div class="featured-img-wrapper relative bs-primary">
+                                <img src="images/alternate-img-3.webp" alt="Featured Image"
+                                    class="w-100 zoom-hover transition relative z-2 br-default" />
+                                <div class="accent-box absolute w-100 h-100 bg-orange z-1 br-default"></div>
+                            </div>
+                        </div>
+                        <div class="col-2 w-50 flex col jc-center">
+                            <div class="heading-wrapper text-blue mb-20">
+                                <h4>Guide to Buyers</h4>
+                            </div>
+                            <div class="description-wrapper text-dark text-work-sans text-mb-20">
+                                <p>Nobody knows the market like we do. Enjoy having a pro at your service. Market
+                                    analysis, upgrades lists, contractors on speed dial, & more!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="gallery" class="pt-100 pb-100">
+            <div class="container">
+                <div class="heading-wrapper text-orange text-work-sans uppercase text-normal text-center mb-30">
+                    <h4>Photo Gallery</h4>
+                </div>
+
+                <div class="slider-center">
+                    <div class="featured-img-wrapper">
+                        <img src="images/gallery-1.webp" alt="Featured Image" />
+                    </div>
+                    <div class="featured-img-wrapper">
+                        <img src="images/gallery-2.webp" alt="Featured Image" />
+                    </div>
+                    <div class="featured-img-wrapper">
+                        <img src="images/gallery-3.webp" alt="Featured Image" />
+                    </div>
+                    <div class="featured-img-wrapper">
+                        <img src="images/gallery-4.webp" alt="Featured Image" />
+                    </div>
+                    <div class="featured-img-wrapper">
+                        <img src="images/gallery-5.webp" alt="Featured Image" />
+                    </div>
+                    <div class="featured-img-wrapper">
+                        <img src="images/gallery-6.webp" alt="Featured Image" />
+                    </div>
+                    <div class="featured-img-wrapper">
+                        <img src="images/gallery-7.webp" alt="Featured Image" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="pt-100 pb-100 bg-cover bg-no-repeat bg-center relative"
+            style="background-image: url(images/house-bg-2.jpg);">
+            <div class="accent-bg absolute w-100 h-100 bg-blue z-1 top-0 opacity-90"></div>
+            <div class="container">
+                <div
+                    class="heading-wrapper text-white text-work-sans uppercase text-normal text-center mb-30 relative z-2">
+                    <h4>Services</h4>
+                </div>
+
+                <div class="services-list-wrapper flex gap-30 relative z-2">
+                    <div
+                        class="service-item box bg-base-white p-30 br-default text-center flex col jc-center ai-center">
+                        <div class="icon-wrapper p-10 flex jc-center bg-orange br-rounded-full mb-30">
+                            <img src="images/check-icon-white.png" alt="Check" class="" />
+                        </div>
+                        <div class="heading-wrapper text-work-sans text-blue mb-20">
+                            <h5>Real Estate Done Right</h5>
+                        </div>
+                        <div class="description-wrapper text-work-sans text-dark">
+                            <p>Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or
+                                sell your residence, looking at investment properties, or just curious about the
+                                markets, our team ensures you get the best experience possible!</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="service-item box bg-base-white p-30 br-default text-center flex col jc-center ai-center">
+                        <div class="icon-wrapper p-10 flex jc-center bg-orange br-rounded-full mb-30">
+                            <img src="images/check-icon-white.png" alt="Check" class="" />
+                        </div>
+                        <div class="heading-wrapper text-work-sans text-blue mb-20">
+                            <h5>Commercial & Residential</h5>
+                        </div>
+                        <div class="description-wrapper text-work-sans text-dark">
+                            <p>Large or small, condo or mansion, we can find it and get at the price that's right.
+                                Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this
+                                community. Happy to help you find where to put you hard-earned dollars</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="service-item box bg-base-white p-30 br-default text-center flex col jc-center ai-center">
+                        <div class="icon-wrapper p-10 flex jc-center bg-orange br-rounded-full mb-30">
+                            <img src="images/check-icon-white.png" alt="Check" class="" />
+                        </div>
+                        <div class="heading-wrapper text-work-sans text-blue mb-20">
+                            <h5>Rely on Expertise</h5>
+                        </div>
+                        <div class="description-wrapper text-work-sans text-dark">
+                            <p>If you have questions about affordability, credit, and loan options, trust us to connect
+                                you with the right people to get the answers you need in a timely fashion. We make sure
+                                you feel confident and educated every step of the way</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="pt-100 pb-100">
+            <div class="container">
+                <div
+                    class="heading-wrapper text-white text-work-sans uppercase text-normal text-center mb-30 relative z-2">
+                    <h4>Contact</h4>
+                </div>
+
+                <div class="content-wrapper flex gap-20">
+                    <div class="col-1 w-50 flex col jc-center">
+                        <div class="heading-wrapper text-dark text-work-sans text-normal uppercase mb-20">
+                            <h4>Marci Metzger - <span>The Ridge Realty Group</span></h4>
+                        </div>
+                        <div class="description-wrapper text-dark text-work-sans text-link">
+                            <p>3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+                            <a href="tel:2069196886">(206) 919-6886</a>
+                        </div>
+                        <div class="heading-wrapper text-dark text-work-sans text-normal uppercase mb-20 mt-50 ">
+                            <h4>Office Hours</h4>
+                        </div>
+                        <div class="description-wrapper text-dark text-work-sans text-link">
+                            <p>Open Daily <b>8:00 am - 7:00 pm</b></p>
+                            <p>Appointments outside office hours available upon request. Just call!</p>
+                        </div>
+                    </div>
+                    <div class="col-2 w-50 flex col jc-center">
+                        <div class="heading-wrapper text-dark text-work-sans text-normal uppercase mb-20">
+                            <h4><span>Send Message</span></h4>
+                        </div>
+                        <div class="form-wrapper">
+                            <form class="contact-form" action="#" method="post">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+
+                                <div class="btn-wrapper flex jc-end">
+                                    <button type="submit" class="btn primary">Send</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="relative">
+
+    </footer>
+    <script>
+        window.onscroll = function () {
+            stick();
+        };
+
+        var navbar = document.getElementById("site-header");
+        var sticky = navbar.offsetTop;
+
+        function stick() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        $('.slider-center').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
