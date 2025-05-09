@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Real Estate</title>
+    <title>Marci Metzger - Real Estate</title>
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="style.css">
 
@@ -14,48 +14,71 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" media="all">
     <script type="text/javascript" src="slick/slick.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
     <header id="site-header" class="top-0 bg-white z-3 bs-default">
         <div class="container">
-            <div class="header-wrapper flex jc-space-between pt-10 pb-10">
+            <div class="header-wrapper relative flex jc-space-between ai-center gap-50 pt-10 pb-10">
+
+                <!-- Logo -->
                 <div class="logo-wrapper">
                     <a href="/">
-                        <img src="images/logo.webp" alt="Logo" class="transition" style="width: 300px;" />
+                        <img src="images/logo.webp" alt="Logo" class="transition" style="width: 200px;" />
                     </a>
                 </div>
-                <nav class="flex ai-center">
-                    <ul class="list-style-none flex gap-50 jc-space-between text-work-sans text-blue uppercase">
+
+                <!-- Hamburger Menu Button -->
+                <button class="mobile-nav-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+                    <i id="menu-icon" class="fas fa-bars" style="font-size: 24px;"></i>
+                </button>
+
+                <!-- Navigation Menu -->
+                <nav id="main-nav" class="nav-menu flex ai-center mobile-hidden">
+                    <ul
+                        class="list-style-none flex gap-50 jc-space-between text-work-sans text-blue uppercase flex-wrap">
                         <li>
-                            <a href="#hero" class="active">
-                                Home
-                            </a>
+                            <a href="#hero" class="active">Home</a>
                         </li>
                         <li>
-                            <a href="#about">
-                                About
-                            </a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#listings">
-                                Listings
-                            </a>
+                            <a href="#listings">Listings</a>
                         </li>
                         <li>
-                            <a href="#services">
-                                Services
-                            </a>
+                            <a href="#services">Services</a>
                         </li>
                         <li>
-                            <a href="#contact">
-                                Contact
-                            </a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
+
             </div>
         </div>
+
+        <nav id="mobile-nav" class="nav-menu flex ai-center absolute top-0 bs-default z-3 bg-white mobile-visible">
+            <ul class="list-style-none flex col gap-20 jc-space-between text-work-sans text-blue uppercase">
+                <li>
+                    <a href="#hero" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#listings">Listings</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="hero" class="pt-100 pb-100 bg-cover bg-no-repeat bg-center relative"
@@ -451,24 +474,26 @@
 
         <section id="contact" class="pt-100 pb-100">
             <div class="container">
-                <div
-                    class="heading-wrapper text-white text-work-sans uppercase text-normal text-center mb-30 relative z-2">
-                    <h4>Contact</h4>
-                </div>
 
                 <div class="content-wrapper flex gap-20">
                     <div class="col-1 w-50 flex col jc-center">
                         <div class="heading-wrapper text-dark text-work-sans text-normal uppercase mb-20">
                             <h4>Marci Metzger - <span>The Ridge Realty Group</span></h4>
                         </div>
-                        <div class="description-wrapper text-dark text-work-sans text-link">
-                            <p>3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
-                            <a href="tel:2069196886">(206) 919-6886</a>
+                        <div class="description-wrapper text-dark text-work-sans text-link flex col gap-10">
+                            <a href="https://maps.app.goo.gl/t4k7FSrYSBcT22po6" target="_blank"
+                                class="flex ai-center gap-10">
+                                <i class="fas fa-map-marker-alt"></i> 3190 HW-160, Suite F, Pahrump, Nevada 89048,
+                                United States
+                            </a>
+                            <a href="tel:2069196886" class="flex ai-center gap-10">
+                                <i class="fas fa-phone"></i> (206) 919-6886
+                            </a>
                         </div>
                         <div class="heading-wrapper text-dark text-work-sans text-normal uppercase mb-20 mt-50 ">
                             <h4>Office Hours</h4>
                         </div>
-                        <div class="description-wrapper text-dark text-work-sans text-link">
+                        <div class="description-wrapper text-dark text-work-sans text-link flex col gap-10">
                             <p>Open Daily <b>8:00 am - 7:00 pm</b></p>
                             <p>Appointments outside office hours available upon request. Just call!</p>
                         </div>
@@ -506,8 +531,44 @@
             </div>
         </section>
     </main>
-    <footer class="relative">
+    <footer class="relative bg-blue pt-50 pb-20">
+        <div class="container">
+            <div class="logo-wrapper mb-20 flex jc-center">
+                <a href="/">
+                    <img src="images/logo.webp" alt="Logo" class="transition" style="width: 300px;" />
+                </a>
+            </div>
+            <nav class="social">
+                <ul class="list-style-none flex gap-20 jc-center">
+                    <li>
+                        <a href="https://www.facebook.com/MarciHomes/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/marciandlauren_nvrealtors/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/marci-metzger-30642496/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.yelp.com/biz/xr3yQN_m2SgO0R_7S6p62w" target="_blank">
+                            <i class="fab fa-yelp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
+            <hr>
+
+            <div class="description-wrapper text-white text-center text-work-sans">
+                <p>Copyright © 2025 Marci METZGER Homes - All Rights Reserved</p>
+            </div>
+        </div>
     </footer>
     <script>
         window.onscroll = function () {
@@ -522,6 +583,23 @@
                 navbar.classList.add("sticky");
             } else {
                 navbar.classList.remove("sticky");
+            }
+        }
+
+        function toggleMenu() {
+            const nav = document.getElementById('mobile-nav');
+            const body = document.body;
+            const icon = document.getElementById('menu-icon');
+
+            nav.classList.toggle('mobile-menu-visible');
+            body.classList.toggle('mobile-menu-visible');
+
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
             }
         }
 
